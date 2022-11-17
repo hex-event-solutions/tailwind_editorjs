@@ -12,8 +12,8 @@ module TailwindEditorjs
     end
 
     ALLOWED_BLOCKS = {
-      paragraph: Blocks::Paragraph
-      # header: Header
+      paragraph: Blocks::Paragraph,
+      header: Blocks::Header,
       # image: Image
     }.freeze
 

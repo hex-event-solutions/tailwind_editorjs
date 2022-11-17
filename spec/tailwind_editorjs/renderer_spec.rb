@@ -33,6 +33,7 @@ RSpec.describe TailwindEditorjs::Renderer do
 
     it 'renders some data' do
       expect(rendered_data).to eq <<~HTML.chomp
+        <h2 class="text-3xl">Big heading time</h2>
         <p class="p-2"></p>
         <p class="p-2">Store the new words?</p>
         <p class="p-2"></p>

@@ -15,6 +15,10 @@ module TailwindEditorjs
           self.erb_template = erb_template
         end
 
+        def call(data)
+          new(data).call
+        end
+
       end
 
       def initialize(data)
@@ -22,7 +26,7 @@ module TailwindEditorjs
       end
 
       def call
-        ERB.new(self.class.erb_template).result(binding)
+        ERB.new(self.class.erb_template).result(binding).split("\n").map(&:strip).join
       end
 
       protected

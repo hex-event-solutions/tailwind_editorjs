@@ -11,18 +11,23 @@ module TailwindEditorjs
 
     end
 
-    ALLOWED_BLOCKS = %w[
-      paragraph
-      header
-      image
-    ]
+    ALLOWED_BLOCKS = {
+      paragraph: Blocks::Paragraph,
+      # header: Header
+      # image: Image
+    }.freeze
 
     def initialize(data)
       @data = data
     end
 
     def render
-      data.to_s
+      data['blocks'].map do |block|
+        block_type = block['type'].to_sym
+        next unless ALLOWED_BLOCKS.key? block_type
+
+        ALLOWED_BLOCKS[block_type].call(block['data'])
+      end.compact.join("\n")
     end
 
     private

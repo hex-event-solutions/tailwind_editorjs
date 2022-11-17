@@ -12,10 +12,8 @@ RSpec.describe TailwindEditorjs::Blocks::Paragraph do
   end
 
   it 'renders the correct html' do
-    expect(rendered_paragraph).to eq <<~HTML
-      <p class="p-2">
-        Body
-      </p>
+    expect(rendered_paragraph).to eq <<~HTML.chomp
+      <p class="p-2">Body</p>
     HTML
   end
 end

@@ -30,7 +30,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
 
   context 'when it is in the default setting' do
     it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-      <div class="w-full flex flex-col items-center">
+      <div class="w-full flex flex-col items-center py-8">
         <figure class="max-w-[30vw]">
           <img src="some_url.png">
         </figure>
@@ -42,7 +42,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
     let(:caption) { 'Some caption' }
 
     it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-      <div class="w-full flex flex-col items-center">
+      <div class="w-full flex flex-col items-center py-8">
         <figure class="max-w-[30vw]">
           <img src="some_url.png">
           <figcaption>Some caption</figcaption>
@@ -61,7 +61,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         let(:with_background) { true }
 
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-          <div class="w-full flex flex-col items-center">
+          <div class="w-full flex flex-col items-center py-8">
             <div class="bg-gray-500 rounded-lg p-4">
               <figure class="border border-gray-500 rounded-lg p-4">
                 <img src="some_url.png">
@@ -75,7 +75,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         let(:with_background) { false }
 
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-          <div class="w-full flex flex-col items-center">
+          <div class="w-full flex flex-col items-center py-8">
             <figure class="border border-gray-500 rounded-lg p-4">
               <img src="some_url.png">
             </figure>
@@ -91,7 +91,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         let(:with_background) { true }
 
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-          <div class="w-full flex flex-col items-center">
+          <div class="w-full flex flex-col items-center py-8">
             <div class="bg-gray-500 rounded-lg p-4">
               <figure class="">
                 <img src="some_url.png">
@@ -105,7 +105,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         let(:with_background) { false }
 
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-          <div class="w-full flex flex-col items-center">
+          <div class="w-full flex flex-col items-center py-8">
             <figure class="">
               <img src="some_url.png">
             </figure>
@@ -125,7 +125,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         let(:with_background) { true }
 
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-          <div class="w-full flex flex-col items-center">
+          <div class="w-full flex flex-col items-center py-8">
             <div class="bg-gray-500 rounded-lg p-4">
               <figure class="max-w-[30vw] border border-gray-500 rounded-lg p-4">
                 <img src="some_url.png">
@@ -139,7 +139,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         let(:with_background) { false }
 
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-          <div class="w-full flex flex-col items-center">
+          <div class="w-full flex flex-col items-center py-8">
             <figure class="max-w-[30vw] border border-gray-500 rounded-lg p-4">
               <img src="some_url.png">
             </figure>
@@ -155,7 +155,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         let(:with_background) { true }
 
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-          <div class="w-full flex flex-col items-center">
+          <div class="w-full flex flex-col items-center py-8">
             <div class="bg-gray-500 rounded-lg p-4">
               <figure class="max-w-[30vw]">
                 <img src="some_url.png">
@@ -169,7 +169,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         let(:with_background) { false }
 
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
-          <div class="w-full flex flex-col items-center">
+          <div class="w-full flex flex-col items-center py-8">
             <figure class="max-w-[30vw]">
               <img src="some_url.png">
             </figure>

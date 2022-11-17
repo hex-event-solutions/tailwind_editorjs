@@ -7,15 +7,15 @@ module TailwindEditorjs
     class Link < Base
 
       template <<~HTML
-        <div class="w-full flex flex-col items-center">
-          <a href="<%= link %>" class="w-full p-4 border border-gray-500 border-2 rounded-lg shadow-lg max-w-[30vw]">
-            <div class="flex flex-row items-center">
+        <div class="w-full flex flex-col items-center py-2">
+          <a href="<%= link %>" class="w-full p-4 border border-gray-500 border-2 rounded-lg shadow-lg max-w-[40vw]">
+            <div class="flex flex-row items-center gap-2">
               <div class="flex-grow">
                 <h2 class="text-2xl"><%= title %></h2>
                 <p><%= description %></p>
               </div>
               <% unless image.empty? %>
-                <div class="h-32 w-32">
+                <div class="h-32 w-32 flex items-center">
                   <img src="<%= image %>">
                 </div>
               <% end %>

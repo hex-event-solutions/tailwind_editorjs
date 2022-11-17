@@ -53,19 +53,19 @@ RSpec.describe TailwindEditorjs::Renderer do
         <p class="py-2"></p>
         <p class="py-2">Store the new words?</p>
         <p class="py-2"></p>
-        <div class="w-full flex flex-col items-center">
+        <div class="w-full flex flex-col items-center py-8">
           <figure class="max-w-[30vw]">
             <img src="some_url.png">
           </figure>
         </div>
-        <div class="w-full flex flex-col items-center">
-          <a href="https://google.com" class="w-full p-4 border border-gray-500 border-2 rounded-lg shadow-lg max-w-[30vw]">
-            <div class="flex flex-row items-center">
+        <div class="w-full flex flex-col items-center py-2">
+          <a href="https://google.com" class="w-full p-4 border border-gray-500 border-2 rounded-lg shadow-lg max-w-[40vw]">
+            <div class="flex flex-row items-center gap-2">
               <div class="flex-grow">
                 <h2 class="text-2xl">Google</h2>
                 <p>Couldn't find a description</p>
               </div>
-              <div class="h-32 w-32">
+              <div class="h-32 w-32 flex items-center">
                 <img src="some_url.png">
               </div>
             </div>

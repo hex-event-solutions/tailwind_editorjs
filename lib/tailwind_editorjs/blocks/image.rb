@@ -7,10 +7,10 @@ module TailwindEditorjs
     class Image < Base
 
       template <<~HTML
-        <div class="w-full flex flex-col items-center">
+        <div class="w-full flex flex-col items-center py-8">
           <% if background? %><div class="bg-gray-500 rounded-lg p-4"><% end %>
             <figure class="<%= figure_classes %>">
-              <img src="<%= url %>">
+              <img src="<%= url %>" class="rounded-lg shadow-lg">
               <% unless caption.empty? %><figcaption>Some caption</figcaption><% end %>
             </figure>
           <% if background? %></div><% end %>

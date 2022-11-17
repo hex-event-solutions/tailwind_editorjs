@@ -15,3 +15,6 @@ Style/AsciiComments:
 Layout/EmptyLinesAroundClassBody:
   Enabled: true
   EnforcedStyle: empty_lines
+
+RSpec/FilePath:
+  Enabled: false

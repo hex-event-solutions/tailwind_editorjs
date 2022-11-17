@@ -6,6 +6,7 @@ source 'https://rubygems.org'
 gemspec
 
 group :development do
+  gem 'bundle-audit', '~> 0.1.0'
   gem 'capybara', '~> 3.38'
   gem 'rake', '~> 13.0'
   gem 'rspec', '~> 3.0'

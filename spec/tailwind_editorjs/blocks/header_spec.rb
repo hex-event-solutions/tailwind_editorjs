@@ -43,5 +43,4 @@ RSpec.describe TailwindEditorjs::Blocks::Header do
   it_behaves_like 'a correctly rendered header', 6, <<~HTML.chomp
     <h6 class="text-base">Heading</h6>
   HTML
-
 end

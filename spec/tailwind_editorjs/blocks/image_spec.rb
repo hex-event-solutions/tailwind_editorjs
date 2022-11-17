@@ -32,7 +32,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
     it_behaves_like 'a correctly rendered image', <<~HTML.chomp
       <div class="w-full flex flex-col items-center py-8">
         <figure class="max-w-[30vw]">
-          <img src="some_url.png">
+          <img src="some_url.png" class="rounded-lg shadow-lg">
         </figure>
       </div>
     HTML
@@ -44,7 +44,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
     it_behaves_like 'a correctly rendered image', <<~HTML.chomp
       <div class="w-full flex flex-col items-center py-8">
         <figure class="max-w-[30vw]">
-          <img src="some_url.png">
+          <img src="some_url.png" class="rounded-lg shadow-lg">
           <figcaption>Some caption</figcaption>
         </figure>
       </div>
@@ -64,7 +64,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
           <div class="w-full flex flex-col items-center py-8">
             <div class="bg-gray-500 rounded-lg p-4">
               <figure class="border border-gray-500 rounded-lg p-4">
-                <img src="some_url.png">
+                <img src="some_url.png" class="rounded-lg shadow-lg">
               </figure>
             </div>
           </div>
@@ -77,7 +77,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
           <div class="w-full flex flex-col items-center py-8">
             <figure class="border border-gray-500 rounded-lg p-4">
-              <img src="some_url.png">
+              <img src="some_url.png" class="rounded-lg shadow-lg">
             </figure>
           </div>
         HTML
@@ -94,7 +94,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
           <div class="w-full flex flex-col items-center py-8">
             <div class="bg-gray-500 rounded-lg p-4">
               <figure class="">
-                <img src="some_url.png">
+                <img src="some_url.png" class="rounded-lg shadow-lg">
               </figure>
             </div>
           </div>
@@ -107,7 +107,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
           <div class="w-full flex flex-col items-center py-8">
             <figure class="">
-              <img src="some_url.png">
+              <img src="some_url.png" class="rounded-lg shadow-lg">
             </figure>
           </div>
         HTML
@@ -128,7 +128,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
           <div class="w-full flex flex-col items-center py-8">
             <div class="bg-gray-500 rounded-lg p-4">
               <figure class="max-w-[30vw] border border-gray-500 rounded-lg p-4">
-                <img src="some_url.png">
+                <img src="some_url.png" class="rounded-lg shadow-lg">
               </figure>
             </div>
           </div>
@@ -141,7 +141,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
           <div class="w-full flex flex-col items-center py-8">
             <figure class="max-w-[30vw] border border-gray-500 rounded-lg p-4">
-              <img src="some_url.png">
+              <img src="some_url.png" class="rounded-lg shadow-lg">
             </figure>
           </div>
         HTML
@@ -158,7 +158,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
           <div class="w-full flex flex-col items-center py-8">
             <div class="bg-gray-500 rounded-lg p-4">
               <figure class="max-w-[30vw]">
-                <img src="some_url.png">
+                <img src="some_url.png" class="rounded-lg shadow-lg">
               </figure>
             </div>
           </div>
@@ -171,7 +171,7 @@ RSpec.describe TailwindEditorjs::Blocks::Image do
         it_behaves_like 'a correctly rendered image', <<~HTML.chomp
           <div class="w-full flex flex-col items-center py-8">
             <figure class="max-w-[30vw]">
-              <img src="some_url.png">
+              <img src="some_url.png" class="rounded-lg shadow-lg">
             </figure>
           </div>
         HTML

@@ -55,7 +55,7 @@ RSpec.describe TailwindEditorjs::Renderer do
         <p class="py-2"></p>
         <div class="w-full flex flex-col items-center py-8">
           <figure class="max-w-[30vw]">
-            <img src="some_url.png">
+            <img src="some_url.png" class="rounded-lg shadow-lg">
           </figure>
         </div>
         <div class="w-full flex flex-col items-center py-2">

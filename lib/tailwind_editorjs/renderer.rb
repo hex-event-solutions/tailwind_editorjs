@@ -1,5 +1,10 @@
 # frozen_string_literal: true
 
+require_relative 'blocks/header'
+require_relative 'blocks/paragraph'
+require_relative 'blocks/image'
+require_relative 'blocks/link'
+
 module TailwindEditorjs
   class Renderer
 
@@ -14,7 +19,8 @@ module TailwindEditorjs
     ALLOWED_BLOCKS = {
       paragraph: Blocks::Paragraph,
       header: Blocks::Header,
-      # image: Image
+      image: Blocks::Image,
+      link: Blocks::Link
     }.freeze
 
     def initialize(data)
@@ -27,7 +33,7 @@ module TailwindEditorjs
         next unless ALLOWED_BLOCKS.key? block_type
 
         ALLOWED_BLOCKS[block_type].call(block['data'])
-      end.compact.join("\n")
+      end.compact.join
     end
 
     private

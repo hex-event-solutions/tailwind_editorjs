@@ -7,7 +7,7 @@ module TailwindEditorjs
     class Paragraph < Base
 
       template <<~HTML
-        <p class="p-2">
+        <p class="py-2">
           <%= text %>
         </p>
       HTML

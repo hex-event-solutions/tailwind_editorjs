@@ -19,6 +19,10 @@ module TailwindEditorjs
           new(data).call
         end
 
+        def normalize(content)
+          content.split("\n").map(&:strip).join
+        end
+
       end
 
       def initialize(data)
@@ -26,12 +30,16 @@ module TailwindEditorjs
       end
 
       def call
-        ERB.new(self.class.erb_template).result(binding).split("\n").map(&:strip).join
+        normalize ERB.new(self.class.erb_template).result(binding)
       end
 
       protected
 
       attr_reader :data
+
+      def normalize(content)
+        self.class.normalize(content)
+      end
 
       private
 

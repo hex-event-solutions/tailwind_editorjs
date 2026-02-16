@@ -20,7 +20,8 @@ module TailwindEditorjs
       paragraph: Blocks::Paragraph,
       header: Blocks::Header,
       image: Blocks::Image,
-      link: Blocks::Link
+      link: Blocks::Link,
+      list: Blocks::List
     }.freeze
 
     def initialize(data)

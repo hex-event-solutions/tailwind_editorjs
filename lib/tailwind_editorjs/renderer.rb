@@ -4,6 +4,7 @@ require_relative 'blocks/header'
 require_relative 'blocks/paragraph'
 require_relative 'blocks/image'
 require_relative 'blocks/link'
+require_relative 'blocks/list'
 
 module TailwindEditorjs
   class Renderer
